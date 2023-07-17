@@ -7,7 +7,6 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { PaginationComponent } from './componentes/pagination/pagination.component';
 import { ButtonComponent } from './componentes/button/button.component';
-import { HomeModule } from "./home/home.module";
 
 @NgModule({
   declarations: [
@@ -19,8 +18,7 @@ import { HomeModule } from "./home/home.module";
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    HomeModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
