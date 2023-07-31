@@ -1,0 +1,18 @@
+<div class="container" *ngFor="let pokemon of pokemons">
+  <div class="image">
+    <img [src]="pokemon.imagem" alt="">
+  </div>
+  <div>
+    <div> {{ pokemon.nome }} </div>
+    <div>
+      <input type="text" placeholder="Comentário adicionado">
+      <button type="button" class="">Comentar</button>
+      <button type="button" class="">Excluir</button>
+    </div>
+  </div>
+
+  <div class="star">
+    <i [ngClass]="favorito ? 'bi bi-star-fill' : 'bi bi-star'" (click)="favoritado()"></i>
+  </div>
+
+</div>
